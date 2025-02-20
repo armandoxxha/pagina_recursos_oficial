@@ -22,7 +22,7 @@ DRIVE8_2024_URL = "https://drive.google.com/drive/folders/1e0Aw9r0QD2wXsBtrgqDp0
 PYTHON_URL = "https://www.python.org/downloads/"
 
 VISUAL_STUDIO_URL = "https://code.visualstudio.com/"
-CODIGO_PAGINA_WEB_GITHUB = "https://github.com/armandoxxha/python_web"
+CODIGO_PAGINA_WEB_GITHUB = "https://github.com/armandoxxha/pagina_recursos_oficial"
 
 #SPONSORS
 

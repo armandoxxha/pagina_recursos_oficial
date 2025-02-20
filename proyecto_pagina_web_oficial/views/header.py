@@ -9,7 +9,7 @@ from proyecto_pagina_web_oficial.styles.colores import Color as Color
 import proyecto_pagina_web_oficial.contants as const
   
 
-def header() -> rx.Component:
+def header(details = True) -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.avatar(
@@ -56,25 +56,33 @@ def header() -> rx.Component:
                 width="100%"
 
             ),
-            align="start"
+            align="start",
+            width="100%"
         ),
-        rx.flex(
-            info_text("+9", "años de experiencia en docencia"),
-            rx.spacer(),
-            info_text("+2", "años de experiencia en ciberseguridad"),
-            rx.spacer(),
-            info_text("+5", "años de experiencia en networking"),
-            width="100%",
-            align="center"
-        ),
-        rx.text(
-           f"""Soy un entusiasta de la programación de software. Actualmente
-                    trabajo como docente de informática. La siguiente web recoge diferentes
-                    links de información correspondiente a mi área, espero te sirva""",
-                width="100%",
-                align="center",
-                font_size = Size.MEDIUM.value,
-                color=TextColor.HEADER.value
+        rx.cond(
+            details,
+            rx.box(
+                rx.flex(
+                    info_text("+9", "años de experiencia en docencia"),
+                    rx.spacer(),
+                    info_text("+2", "años de experiencia en ciberseguridad"),
+                    rx.spacer(),
+                    info_text("+5", "años de experiencia en networking"),
+                    width="100%",
+                    align="center"
+                ),
+                rx.text(
+                    f"""Soy un entusiasta de la programación de software. Actualmente
+                        trabajo como docente de informática. La siguiente web recoge diferentes
+                        links de información correspondiente a mi área, espero te sirva""",
+                    width="100%",
+                    align="center",
+                    font_size = Size.MEDIUM.value,
+                    color=TextColor.HEADER.value
+                ),
+                width="100%"
+            )
+            
         ),
         align="start",
         spacing="8"

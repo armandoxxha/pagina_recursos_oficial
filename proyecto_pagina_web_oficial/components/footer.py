@@ -8,7 +8,7 @@ import proyecto_pagina_web_oficial.contants as const
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src="logo.png",
+            src="/logo.png",
             width=Size.VERY_BIG.value,
             height=Size.VERY_BIG.value,
             weight=Size.VERY_BIG.value,
@@ -20,15 +20,28 @@ def footer() -> rx.Component:
              is_external=True,
              font_size=Size.MEDIUM.value      
           ),
-         rx.text(
-            "V3.BUILDING SOFTWARE WITH ♥ FROM GALACIA TO THE WORLD",
-            font_size = Size.MEDIUM.value,
-            margin_top=Size.ZERO.value
-        ),
+          rx.link(
+              rx.hstack(
+                rx.image(
+                    src="/github-brands-solid.svg",
+                    width=Size.LARGE.value,
+                    height=Size.LARGE.value
+                ),
+                rx.text(
+                    "V3.BUILDING SOFTWARE WITH ♥ FROM GALACIA TO THE WORLD",
+                    font_size = Size.MEDIUM.value,
+                    margin_top=Size.ZERO.value
+                ),
+
+            ),
+            href=const.CODIGO_PAGINA_WEB_GITHUB,
+            is_external=True
+                 
+          ),
         margin_botton=Size.BIG.value,
         padding_botton=Size.BIG.value,
         padding_x=Size.BIG.value,
-        spacing="4",
+        spacing="0",
         color = TextColor.FOOTER.value,
         align="center"
         

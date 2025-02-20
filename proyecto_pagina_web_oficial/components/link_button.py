@@ -27,6 +27,6 @@ def link_button(title: str, body: str, url: str, image: str, is_external=True) -
             )
         ),
         href=url,
-        is_external=True,
+        is_external=is_external,
         width="100%"
     )
