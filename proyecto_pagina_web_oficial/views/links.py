@@ -23,13 +23,13 @@ def links() -> rx.Component:
          link_button(
              "Github Python Inicial Octavo",
              "Enlace a repositorio de github de Octavo",
-             const.GIT_HUB_URL,
+             const.GIT_HUB_PYTHON_8,
              "/github-brands-solid.svg"
           ),
          link_button(
              "Github Python avanzado Noveno",
              "Enlace a repositorio de github de Noveno",
-             const.GIT_HUB_URL,
+             const.GIT_HUB_PYTHON_9,
              "/github-brands-solid.svg"
           ),
          title("Recursos y más"),

@@ -4,7 +4,8 @@ TWITCH_URL="https://www.twitch.tv/armandoxxlml"
 YOUTUBE_URL="https://www.youtube.com/channel/UCA0KwF2ohw5jXYGZipxaRLw"
 DISCORD_URL=""
 GIT_HUB_URL = "https://github.com/armandoxxha"
-
+GIT_HUB_PYTHON_8 = "https://github.com/armandoxxha/python_octavo_2025"
+GIT_HUB_PYTHON_9 = "https://github.com/armandoxxha/python_noveno_2025"
 # Contactos
 
 MYPUBLICINBOX_URL = "innovaedutucu@gmail.com"
